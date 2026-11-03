@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#24bcae">
+  <title>声屿 · SOUND ISLAND</title>
+  <link rel="stylesheet" href="styles.css">
+  <script type="module" src="app.js"></script>
+</head>
+<body>
+  <div class="ambient" aria-hidden="true"><i></i><i></i><i></i></div>
+  <main>
+    <section id="landing" class="landing" aria-label="欢迎来到声屿">
+      <button id="start" class="start" aria-label="开始，进入音频播放页面">
+        <span class="start-orbit" aria-hidden="true"></span>
+        <span class="start-icon" aria-hidden="true">↗</span>
+        <span class="start-title">开始</span>
+        <span class="start-subtitle">TOUCH TO BEGIN</span>
+      </button>
+    </section>
+    <section id="player" class="player" aria-labelledby="page-title" hidden>
+      <header>
+        <a href="#" id="back" aria-label="返回首页"><span aria-hidden="true">↖</span> 返回</a>
+        <span class="edition">SIX SOUNDS. YOUR MOMENT.</span>
+        <span class="header-dot" aria-hidden="true"></span>
+      </header>
+      <div class="intro"><p class="eyebrow">A LITTLE SPACE FOR SOUND</p><h1 id="page-title" tabindex="-1">声屿<span>sound island</span></h1><p class="description">轻触一下，让声音发生。</p></div>
+      <div class="pads" aria-label="音频按钮">
+        <button class="pad" data-index="0" aria-label="播放声音 01"><span class="pad-number">01</span><span class="shape circle" aria-hidden="true"></span><span class="pad-caption">声音一 <span>↗</span></span></button>
+        <button class="pad" data-index="1" aria-label="播放声音 02"><span class="pad-number">02</span><span class="shape diamond" aria-hidden="true"></span><span class="pad-caption">声音二 <span>↗</span></span></button>
+        <button class="pad" data-index="2" aria-label="播放声音 03"><span class="pad-number">03</span><span class="shape bars" aria-hidden="true"><i></i><i></i><i></i></span><span class="pad-caption">声音三 <span>↗</span></span></button>
+        <button class="pad" data-index="3" aria-label="播放声音 04"><span class="pad-number">04</span><span class="shape arches" aria-hidden="true"></span><span class="pad-caption">声音四 <span>↗</span></span></button>
+        <button class="pad" data-index="4" aria-label="播放声音 05"><span class="pad-number">05</span><span class="shape cross" aria-hidden="true"></span><span class="pad-caption">声音五 <span>↗</span></span></button>
+        <button class="pad" data-index="5" aria-label="播放声音 06"><span class="pad-number">06</span><span class="shape dots" aria-hidden="true"><i></i><i></i><i></i><i></i></span><span class="pad-caption">声音六 <span>↗</span></span></button>
+      </div>
+      <footer><p id="status" role="status" aria-live="polite">选择一个声音，开启此刻。</p><span class="footer-note">一次一段 · 随心切换</span></footer>
+    </section>
+  </main>
+</body>
+</html>
